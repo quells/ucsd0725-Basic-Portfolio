@@ -1,3 +1,7 @@
+/*
+Using flex box example from https://css-tricks.com/couple-takes-sticky-footer/
+*/
+
 html, body {
     height: 100%;
 }
@@ -52,7 +56,7 @@ header * span {
     font-size: 1.2em;
     padding: 0 0.75em;
     float: right;
-    border-right: 1px solid #eee;
+    border-right: 1px solid #ddd;
     margin: 2em auto;
     bottom: 0;
 }
@@ -63,30 +67,36 @@ header * span:first-of-type {
 }
 
 header * span a,
-header * span a:visited {
+header * span a:visited,
+header * span a:hover,
+header * span a:active {
     text-decoration: none;
     color: #999;
 }
 
 header * span a:hover,
 header * span a:active {
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #777;
 }
 
 #content {
     flex: 1 0 auto;
 }
 
-section {
+#content section,
+#content aside {
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+#content section {
     width: 650px;
     float: left;
-    background: white;
-    border: 1px solid #ddd;
     margin-top: 2.5em;
     padding-bottom: 2.16em;
 }
 
-section h2 {
+#content section h2 {
     font-size: 1.8em;
     font-weight: bold;
     padding: 1.5em 0;
@@ -94,38 +104,49 @@ section h2 {
     border-bottom: 3px solid #ddd;
 }
 
-section p {
+#content section p {
     font-size: 1.2em;
+    line-height: 1.2;
     margin: 1.8em 1.8em 0;
 }
 
-aside {
-    width: 268px;
+#content section p img {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+#content aside {
+    width: 270px;
     float: right;
-    background: white;
-    border: 1px solid #ddd;
     text-align: center;
     margin-top: 2.5em;
 }
 
-aside h3 {
+#content aside h3 {
     font-size: 1.4em;
     font-weight: bold;
     padding: 1.2em 0;
     margin: 0 1.5em;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid #ddd;
 }
 
-aside img {
+#content aside a,
+#content aside a:visited,
+#content aside a:hover,
+#content aside a:active {
+    text-decoration: none;
+}
+
+#content aside img {
     margin: 2em 0.25em;
 }
 
 footer {
-    text-align: center;
     background-color: #666;
     border-top: 8px solid #4aaaa5; /* Teal */
     margin-top: 2.5em;
     padding: 2.5em 0;
+    text-align: center;
 }
 
 footer small {
