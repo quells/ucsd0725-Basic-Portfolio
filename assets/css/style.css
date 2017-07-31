@@ -61,6 +61,11 @@ header * span a:visited {
     color: #999;
 }
 
+header * span a:hover,
+header * span a:active {
+    border-bottom: 1px solid #999;
+}
+
 section {
     width: 650px;
     float: left;
