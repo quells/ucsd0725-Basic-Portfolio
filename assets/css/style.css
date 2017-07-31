@@ -3,10 +3,12 @@ body {
     font-size: 15px;
     text-align: center;
     background: #eee;
+    color: #777;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Georgia, Times, 'Times New Roman', serif;
+    color: #4aaaa5; /* Teal */
 }
 
 .wrapper {
@@ -18,7 +20,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    overflow: auto;
     border-bottom: 2px solid #ccc;
     background: #fff;
 }
@@ -80,14 +81,12 @@ section h2 {
     font-weight: bold;
     padding: 1.5em 0;
     margin: 0 1.2em;
-    color: #4aaaa5; /* Teal */
     border-bottom: 3px solid #ddd;
 }
 
 section p {
     font-size: 1.2em;
     margin: 1.8em 1.8em 0;
-    color: #777;
 }
 
 aside {
@@ -104,7 +103,6 @@ aside h3 {
     font-weight: bold;
     padding: 1.2em 0;
     margin: 0 1.5em;
-    color: #4aaaa5; /* Teal */
     border-bottom: 2px solid #eee;
 }
 
