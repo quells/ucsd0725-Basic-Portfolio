@@ -29,6 +29,8 @@ h1, h2, h3, h4, h5, h6 {
     overflow: auto;
 }
 
+.clear { clear: both; }
+
 header {
     border-bottom: 2px solid #ccc;
     background: #fff;
@@ -152,6 +154,48 @@ header * span a:active {
     color: #fff;
     padding: 0.5em 1.5em;
     margin-top: 1em;
+}
+
+#portfolio-projects li {
+    width: 276px;
+    height: 210px;
+    float: left;
+    display: inline-block;
+    margin: 1.8em 0 0 2.16em;
+    position: relative;
+    background: red;
+}
+
+#portfolio-projects li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+}
+
+#portfolio-projects li a,
+#portfolio-projects li a:visited,
+#portfolio-projects li a:hover,
+#portfolio-projects li a:active {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 1.2em;
+    color: white;
+}
+
+#portfolio-projects li a span {
+    text-align: center;
+    position: absolute;
+    display: block;
+    bottom: 10px;
+    width: 100%;
+    padding: 1em 0;
+    background: #4aaaa5; /* Teal */
+    background: rgba(74, 170, 165, 0.9)
+}
+
+#portfolio-projects li a:hover span {
+    background: #4aaaa5; /* Teal */
+    background: rgba(74, 170, 165, 1)
 }
 
 #content aside {
