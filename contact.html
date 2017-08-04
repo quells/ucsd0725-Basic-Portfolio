@@ -21,7 +21,7 @@
                 <h2>Contact</h2>
                 <form id="contact-form">
                     <span>Name</span>
-                    <input type="text" name="name" placeholder="John Smith">
+                    <input id="nameField" type="text" name="name" placeholder="John Smith">
                     <br>
                     <span>Email</span>
                     <input type="text" name="email" placeholder="example@gmail.com">
@@ -43,5 +43,11 @@
         <footer>
             <small>&copy; <a href="copyright.txt" target="_blank">Copyright</a> 2017 Kai Wells</small>
         </footer>
+        <script>
+        	var nameField = document.getElementById("nameField")
+        	if (Math.random() < 0.5) {
+	        	nameField.placeholder = "Jane Smith"
+        	}
+        </script>
     </body>
 </html>
